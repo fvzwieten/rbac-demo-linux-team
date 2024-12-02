@@ -1,6 +1,6 @@
 ---
 - name: Update all RHEL boxes
-  hosts: satellite_content_view_rhel9
+  hosts: all
   become: true
 
   tasks:
