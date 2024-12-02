@@ -1,0 +1,11 @@
+---
+- name: Update all RHEL boxes
+  hosts: satellite_content_view_rhel9
+  become: true
+
+  tasks:
+  - name: perform the update
+    ansible.buildin.dnf:
+      name: "*"
+      state: latest
+      
