@@ -5,7 +5,7 @@
 
   tasks:
   - name: perform the update
-    ansible.buildin.dnf:
+    ansible.builtin.dnf:
       name: "*"
       state: latest
       
